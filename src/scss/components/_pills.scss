@@ -1,0 +1,51 @@
+/* ==========================================================================
+   POST TYPE PILLS/BADGES
+   ========================================================================== */
+
+.c-pill-wrap {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.c-pill-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  border: 1px solid #E9D7FE;
+  background: #F9F5FF;
+  color: #6B21A8;
+  line-height: 1.5;
+
+  // Post type variant (blue)
+  &.post-tag {
+    border: 1px solid #C7D7FE;
+    background: #EEF4FF;
+    color: #1E40AF;
+  }
+
+  // Page type variant (purple - default)
+  &.page-tag {
+    border: 1px solid #E9D7FE;
+    background: #F9F5FF;
+    color: #6B21A8;
+  }
+
+  // Additional custom post type variants
+  &.project-tag {
+    border: 1px solid #BBF7D0;
+    background: #F0FDF4;
+    color: #15803D;
+  }
+
+  &.resource-tag {
+    border: 1px solid #FED7AA;
+    background: #FFF7ED;
+    color: #C2410C;
+  }
+}
